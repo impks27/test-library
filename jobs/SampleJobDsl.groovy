@@ -1,2 +1,2 @@
 println "Executing SampleJobDsl.groovy"
-println "additionalParameters: " + message + " : " + credentials
+println "additionalParameters from SampleJobDsl.groovy: " + message + " : " + credentials
