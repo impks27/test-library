@@ -1,7 +1,7 @@
 node {
   checkout scm
 
-  jobDsl scriptText: 'println "Executing scriptText with jobDsl"'
+  jobDsl scriptText: 'println "Executing scriptText with jobDsl. BUILD_NUMBER = ${BUILD_NUMBER}"'
 
   jobDsl targets: ['jobs/SampleJobDsl.groovy','jobs/ExampleJobDsl.groovy'].join('\n'),
   additionalParameters: [message: 'This is printed from additionalParameters', credentials: 'jenkins']
