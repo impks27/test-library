@@ -1,0 +1,11 @@
+node {
+  stage {
+    checkout([$class: 'GitSCM',
+      branches: [[name: '*/master']],
+      doGenerateSubmoduleConfigurations: false,
+      extensions: [[$class: 'CleanCheckout']],
+      submoduleCfg: [],
+      userRemoteConfigs: [[credentialsId: 'jenkins', url: 'git@github.com:impks27/test-library.git']]
+    ])
+  }
+}
