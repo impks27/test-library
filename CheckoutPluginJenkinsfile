@@ -1,5 +1,5 @@
 node {
-  stage {
+  stage("checkout plugin") {
     checkout([$class: 'GitSCM',
       branches: [[name: '*/master']],
       doGenerateSubmoduleConfigurations: false,
