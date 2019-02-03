@@ -1,0 +1,5 @@
+node {
+    git branch: 'master',
+    credentialsId: 'jenkins',
+    url: 'git@github.com:impks27/test-groovy.git'
+}
