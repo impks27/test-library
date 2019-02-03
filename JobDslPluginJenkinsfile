@@ -1,4 +1,4 @@
 node {
-  checkout scm
+  //checkout scm
   jobDsl targets: ['SampleJobDsl.groovy'].join('\n')
 }
